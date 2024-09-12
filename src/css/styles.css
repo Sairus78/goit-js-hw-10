@@ -9,3 +9,158 @@
 @import url('./base.css');
 
 /* Sections style */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  padding-left: 156px;
+}
+
+/* Контейнер для таймера */
+.timer-container {
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: start;
+  gap: 24px;
+  max-width: 346px;
+}
+/* Кожне поле часу */
+.field {
+  text-align: center;
+  width: 60px;
+}
+
+.value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 14px;
+  color: #666;
+}
+.date-picker {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+#datetime-picker {
+  height: 40px;
+  width: 272px;
+  /* padding: 5px; */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+button[data-start] {
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[data-start]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Стилі для таймера */
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  width: 346px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Стилі для інпутів */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+input[type='number'] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type='number']:focus {
+  border-color: #3498db;
+  outline: none;
+}
+fieldset {
+  margin-top: 20px;
+  display: flex;
+}
+
+legend {
+  font-weight: bold;
+}
+/* Стилі для радіокнопок */
+fieldset label {
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+input[type='radio'] {
+  margin-right: 5px;
+}
+/* Стилі для кнопки */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+button:active {
+  background-color: #1c5980;
+}
